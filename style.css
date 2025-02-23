@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.header,
+.greeting,
+.info,
+.testimonial,
+.footer {
+    padding: 8px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header,
+ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #1f2937;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.footer {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul,
+li {
+    font-size: 18px;
+    color: #e5e7eb;
+    list-style-type: none;
+    padding: 8px;
+
+}
+a {
+    color: #e5e7eb;
+    text-decoration: none;
+}
