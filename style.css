@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    font-family: 'Robato', sans-serif;
 }
 
 .header,
@@ -10,10 +11,15 @@ body {
 .info,
 .testimonial,
 .footer {
-    padding: 8px 60px;
+    padding: 8px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.greeting,
+.info,
+.testimonial {
+    flex: 1;
 }
 .header,
 ul {
@@ -24,24 +30,91 @@ ul {
 }
 
 .header {
-    position: sticky;
-    top: 0;
+
     background-color: #1f2937;
     justify-content: space-between;
     flex: 0 0 auto;
-    
+    max-height: 40px;
+}
+.greeting {
+    background-color: #1f2937;
+    color: #f9faf8;
+}
+
+.greeting-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting p {
+    color: #e5e7eb;
+}
+
+.images {
+    flex: 1;
+}
+.info {
+    flex-direction: column;
+    background-color: white;
+}
+
+.info h2 {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+.testimonial {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-weight:lighter;
+    color: #1f2937;
+}
+.testimonial .signed {
+    font-weight: normal;
+   text-align: right;
+}
+
+.quote {
+    justify-content: center;
+}
+
+.action {
+    background-color: white;
 }
 
 .header-logo {
     font-size: 24px;
+    font-weight: 900;
     color: #f9faf8;
 }
 
 .footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
     flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+button {
+    background-color: #3882f6;
+    color: white;
+}
+
+.blue-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3882f6;
+    color: white;
+}
+
+.outline-button {
+    border: 2px solid white;
 }
 
 ul,
